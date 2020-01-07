@@ -9,9 +9,18 @@ import { products } from '../products';
 })
 export class ProductListComponent implements OnInit {
   products = products;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  share() {
+    alert("Compartilhado!");
+  }
+
+  onNotify() {
+    alert("Você vai ser notificado quando o produto tiver promoção");
   }
 
 }
